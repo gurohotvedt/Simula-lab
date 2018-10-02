@@ -1,0 +1,8 @@
+begin
+  external class demos = "demos";
+  demos begin
+
+  ! variables;
+  I
+
+end;
