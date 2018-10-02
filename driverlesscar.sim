@@ -3,6 +3,10 @@ begin
   demos begin
 
   ! variables;
-  I
+  boolean atEnd;
+  ref(rdist) cars;
+  ref(res) array S(-5:5, -5,5);
+  ref (condq) LQ;
 
 end;
+! Test av git endring;
