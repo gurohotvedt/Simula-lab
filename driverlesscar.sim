@@ -3,7 +3,16 @@ begin
   demos begin
 
   ! variables;
-  boolean atEnd;
+
+  integer M; !max number of cars in each segment;
+  integer V; !speed of single car on each segment;
+  integer S; !length of segment;
+  real gammaw; !arrival intensity of cars eastbound;
+  real gamman; !northbound;
+  real T; !time for green per car(s);
+  integer Ts; !simtime;
+  integer Nr; !numreplica;
+  
   ref(rdist) cars;
   ref(res) array S(-5:5, -5,5);
   ref (condq) LQ;
