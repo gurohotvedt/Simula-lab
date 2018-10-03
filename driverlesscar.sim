@@ -17,5 +17,9 @@ begin
   ref(res) array S(-5:5, -5,5);
   ref (condq) LQ;
 
+  entity class northcar(posisionx, positiony);
+    integer positionx;
+    integer positiony;
+
 end;
 ! Test av git edbynndring fra Nora;

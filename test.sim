@@ -1,0 +1,9 @@
+begin
+  external class demos = "demos";
+  demos begin
+
+    ! HELLO WORLD PROGRAM (Step 1);
+    outText("HELLO WORLD");
+
+  end;
+end;

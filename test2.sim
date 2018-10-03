@@ -1,0 +1,23 @@
+begin
+  external class demos = "demos";
+  demos begin
+
+    ref(RDist) waiting_time; !RDist - real distribution;
+    real Mean_Wait_time, SIM_TIME;
+
+    Entity class EntityXX;
+    begin
+      hold(waiting_time.sample);
+    end;
+
+    Mean_Wait_time := 10*60; !10 Minutes in seconds;
+    SIM_TIME := 1*24*60*60; !simulate for 1 day(in seconds);
+
+    waiting_time :- new NegExp("wait1", 1/Mean_Wait_time);
+
+    new EntityXX("EntityXX_Name").schedule(0.0);
+
+    hold(SIM_TIME);
+
+  end;
+end;
